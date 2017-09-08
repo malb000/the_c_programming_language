@@ -1,1 +1,1 @@
-#Chapter 6: Structures#
+# Chapter 6: Structures
