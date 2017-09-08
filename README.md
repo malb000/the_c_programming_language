@@ -1,4 +1,4 @@
-# [The C Programming Language, Second Edition (K&R)] (https://www.cs.princeton.edu/~bwk/cbook.html)
+# [The C Programming Language, Second Edition (K&R)](https://www.cs.princeton.edu/~bwk/cbook.html)
 
 ## Table of Contents
 
