@@ -2,7 +2,7 @@
 
 **Exercise 1-1, (p. 8):**
 
-Run the "hello, world" program on your system. Experiment with leaving out parts of the program, to see what error messages you get.
+Run the _"hello, world"_ program on your system. Experiment with leaving out parts of the program, to see what error messages you get.
 
 ---
 
@@ -56,7 +56,7 @@ Write a program to copy its input to its output, replacing each string of one or
 
 **Exercise 1-10, (p. 20):**
 
-Write a program to copy its input to its output, replacing each tab by `\t` , each backspace by `\b` , and each backslash by `\\` . This makes tabs and backspaces visible in an unambiguous way.
+Write a program to copy its input to its output, replacing each tab by `\t`, each backspace by `\b`, and each backslash by `\\`. This makes tabs and backspaces visible in an unambiguous way.
 
 ---
 
