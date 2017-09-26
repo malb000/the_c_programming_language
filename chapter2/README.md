@@ -65,3 +65,47 @@ unsigned long long: 0 to 18446744073709551615
 ```
 
 ---
+
+**Exercise 2-2, (p. 42):**
+
+Write a loop equivalent to the `for` loop above without using `&&` or `||`.
+
+[getline.c](src/getline.c)
+
+```c
+#include <stdio.h>
+
+#define MAXLINE 1000
+
+int main() {
+  char line[MAXLINE];
+  int c, len = 0;
+
+  while (len < MAXLINE - 1) {
+    c = getchar();
+
+    if (c == EOF) {
+      break;
+    } else if (c == '\n') {
+      break;
+    }
+    
+    line[len++] = c;
+  }
+
+  line[len] = '\0';
+
+  printf("Line (length %d): %s\n", len, line);
+
+  return 0;
+}
+```
+
+**Output:**
+
+```
+This is a test!
+Line (length 15): This is a test!
+```
+
+---
