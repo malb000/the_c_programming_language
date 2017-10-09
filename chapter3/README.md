@@ -30,7 +30,7 @@ int binsearch(int x, int v[], int n) {
 
 ---
 
-**Exercise 3-1, (p. 58):**
+**Exercise 3-2, (p. 60):**
 
 Write a function `escape(s,t)` that converts characters like newline and tab into visible escape sequences like `\n` and `\t` as it copies the string `t` to `s`. Use a `switch`. Write a function for the other direction as well, converting escape sequences into the real characters.
 
@@ -81,6 +81,39 @@ void escape (char *s, char *t)
         strncat(t, s, 1);
     }
   }
+}
+```
+
+---
+
+**Exercise 3-4, (p. 64):**
+
+In a two's complement number representation, our version of `itoa` does not handle the largest negative number, that is, the value of `n` equal to `-(2^(wordsize - 1))`. Explain why not. Modify it to print that value correctly regardless of the machine on which it runs. 
+
+
+> The reason why the code provided in the book will not work on `INT_MIN` is because two's complement of `INT\_MIN results in INT\_MIN.
+
+
+[itoa.c](src/itoa.c)
+
+```c
+void itoa(int n, char s[])
+{
+  int i, sign;
+  
+  sign = n;
+
+  i = 0;
+  do {
+    s[i++] = abs(n % 10) + '0';
+  } while ((n /= 10));
+  
+  if (sign < 0) {
+    s[i++] = '-';
+  }
+
+  s[i] = '\0';
+  reverse(s);
 }
 ```
 
